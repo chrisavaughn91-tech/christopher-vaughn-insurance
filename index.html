@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Christopher Vaughn Insurance</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <p class="brand">Christopher Vaughn Insurance</p>
+        <p class="tag">Licensed insurance agent · Ohio</p>
+        <nav>
+          <a href="./index.html" aria-current="page">Home</a>
+          <a href="./privacy.html">Privacy policy</a>
+          <a href="./terms.html">SMS terms</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Text updates about your quote or policy</h1>
+      <p>
+        I am Christopher Vaughn, a licensed insurance agent in Ohio. If you
+        already asked me about a quote or an existing policy, I can text you
+        appointment reminders, follow-ups, and answers about that business.
+      </p>
+      <p>
+        Program number:
+        <strong>(614) 363-2893</strong>
+        · Office:
+        <a href="tel:+16149809166">(614) 980-9166</a>
+      </p>
+
+      <div class="card">
+        <h2>Opt in to SMS</h2>
+        <p class="fine">
+          Check the box yourself. It is not pre-checked. This is not a purchased
+          list and not an unsolicited blast.
+        </p>
+        <form id="optin" action="#" method="post">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required />
+
+          <label for="mobile">Mobile number</label>
+          <input
+            id="mobile"
+            name="mobile"
+            type="tel"
+            autocomplete="tel"
+            required
+            placeholder="(614) 555-0100"
+          />
+
+          <label class="consent">
+            <input id="agree" name="agree" type="checkbox" value="yes" required />
+            <span>
+              I agree to receive recurring SMS from Christopher Vaughn Insurance
+              at the number I provided about my insurance quote or policy
+              (appointment reminders, follow-ups, and answers). Message
+              frequency varies; up to 8 messages per month. Message and data
+              rates may apply. No mobile information will be shared with third
+              parties or affiliates for marketing or promotional purposes.
+              Reply STOP to cancel, HELP for help. Privacy policy:
+              <a href="./privacy.html">privacy</a>. SMS terms:
+              <a href="./terms.html">terms</a>.
+            </span>
+          </label>
+
+          <button type="submit">Agree and opt in</button>
+        </form>
+        <p class="ok" id="thanks" role="status">
+          Thanks. You asked to receive SMS from Christopher Vaughn Insurance.
+          Reply STOP on any text to cancel.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="wrap">
+        Christopher Vaughn, sole proprietor · Ohio · SMS program pages for
+        carrier registration. Not legal advice.
+      </div>
+    </footer>
+    <script>
+      document.getElementById("optin").addEventListener("submit", function (e) {
+        e.preventDefault();
+        document.getElementById("thanks").style.display = "block";
+      });
+    </script>
+  </body>
+</html>
