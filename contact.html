@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact · Christopher Vaughn Insurance</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <p class="brand">Christopher Vaughn Insurance</p>
+        <p class="tag">Licensed insurance agent · Ohio</p>
+        <nav>
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html" aria-current="page">Contact</a>
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./terms.html">Terms of Service</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Contact</h1>
+      <p>
+        Christopher Vaughn Insurance<br />
+        Ohio<br />
+        Phone:
+        <a href="tel:+16149809166">(614) 980-9166</a><br />
+        Text line: (614) 363-2893
+      </p>
+
+      <div class="card">
+        <h2>Opt in to SMS</h2>
+        <p class="fine">
+          Check the box yourself. It is not pre-checked. Consent is not required
+          to get a quote or buy a policy.
+        </p>
+        <form id="optin" action="#" method="post">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required />
+
+          <label for="mobile">Mobile phone number</label>
+          <input
+            id="mobile"
+            name="mobile"
+            type="tel"
+            autocomplete="tel"
+            required
+            placeholder="(614) 555-0100"
+          />
+
+          <label class="consent">
+            <input id="agree" name="agree" type="checkbox" value="yes" required />
+            <span>
+              Yes, I would like to receive automated text messages from
+              Christopher Vaughn Insurance about my insurance quote or policy
+              (appointment reminders, follow-ups, and answers). I understand I
+              will receive up to 8 messages per month.
+            </span>
+          </label>
+
+          <p class="fine">
+            You will receive up to 8 messages per month. Message and data rates
+            may apply depending on your mobile phone service plan. Reply HELP
+            for help or STOP to cancel any time. By providing your phone number
+            and checking the box above, you agree to receive text messages from
+            Christopher Vaughn Insurance. Consent is not required to get a quote
+            or make a purchase. No mobile information will be shared with third
+            parties or affiliates for marketing or promotional purposes.
+            <a href="./terms.html">Terms of Service</a>
+            |
+            <a href="./privacy.html">Privacy Policy</a>
+          </p>
+
+          <button type="submit">Yes, sign me up!</button>
+        </form>
+        <p class="ok" id="thanks" role="status">
+          Great! You are opted in to SMS from Christopher Vaughn Insurance. You
+          will receive a text to confirm your enrollment. Reply STOP to cancel,
+          HELP for help.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="wrap">
+        © 2026 Christopher Vaughn Insurance · Ohio ·
+        <a href="./privacy.html">Privacy Policy</a>
+        ·
+        <a href="./terms.html">Terms of Service</a>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("optin").addEventListener("submit", function (e) {
+        e.preventDefault();
+        document.getElementById("thanks").style.display = "block";
+      });
+    </script>
+  </body>
+</html>
