@@ -13,8 +13,8 @@
         <p class="tag">Licensed insurance agent · Ohio</p>
         <nav>
           <a href="./index.html" aria-current="page">Home</a>
-          <a href="./privacy.html">Privacy policy</a>
-          <a href="./terms.html">SMS terms</a>
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./terms.html">Terms of Service</a>
         </nav>
       </div>
     </header>
@@ -35,14 +35,14 @@
       <div class="card">
         <h2>Opt in to SMS</h2>
         <p class="fine">
-          Check the box yourself. It is not pre-checked. This is not a purchased
-          list and not an unsolicited blast.
+          Check the box yourself. It is not pre-checked. Consent is not required
+          to get a quote or buy a policy.
         </p>
         <form id="optin" action="#" method="post">
           <label for="name">Your name</label>
           <input id="name" name="name" type="text" autocomplete="name" required />
 
-          <label for="mobile">Mobile number</label>
+          <label for="mobile">Mobile phone number</label>
           <input
             id="mobile"
             name="mobile"
@@ -55,23 +55,32 @@
           <label class="consent">
             <input id="agree" name="agree" type="checkbox" value="yes" required />
             <span>
-              I agree to receive recurring SMS from Christopher Vaughn Insurance
-              at the number I provided about my insurance quote or policy
-              (appointment reminders, follow-ups, and answers). Message
-              frequency varies; up to 8 messages per month. Message and data
-              rates may apply. No mobile information will be shared with third
-              parties or affiliates for marketing or promotional purposes.
-              Reply STOP to cancel, HELP for help. Privacy policy:
-              <a href="./privacy.html">privacy</a>. SMS terms:
-              <a href="./terms.html">terms</a>.
+              Yes, I would like to receive automated text messages from
+              Christopher Vaughn Insurance about my insurance quote or policy
+              (appointment reminders, follow-ups, and answers). I understand I
+              will receive up to 8 messages per month.
             </span>
           </label>
 
-          <button type="submit">Agree and opt in</button>
+          <p class="fine">
+            You will receive up to 8 messages per month. Message and data rates
+            may apply depending on your mobile phone service plan. Reply HELP
+            for help or STOP to cancel any time. By providing your phone number
+            and checking the box above, you agree to receive text messages from
+            Christopher Vaughn Insurance. Consent is not required to get a quote
+            or make a purchase. No mobile information will be shared with third
+            parties or affiliates for marketing or promotional purposes.
+            <a href="./terms.html">Terms of Service</a>
+            |
+            <a href="./privacy.html">Privacy Policy</a>
+          </p>
+
+          <button type="submit">Yes, sign me up!</button>
         </form>
         <p class="ok" id="thanks" role="status">
-          Thanks. You asked to receive SMS from Christopher Vaughn Insurance.
-          Reply STOP on any text to cancel.
+          Great! You are opted in to SMS from Christopher Vaughn Insurance. You
+          will receive a text to confirm your enrollment. Reply STOP to cancel,
+          HELP for help.
         </p>
       </div>
     </main>
