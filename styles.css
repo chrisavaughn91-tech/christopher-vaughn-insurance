@@ -176,3 +176,17 @@ footer {
   font-family: "Segoe UI", system-ui, sans-serif;
   font-size: 0.85rem;
 }
+
+.licenses,
+.disclaimer {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.disclaimer {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
